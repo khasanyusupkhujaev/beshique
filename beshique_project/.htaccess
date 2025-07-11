@@ -1,0 +1,14 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/beshique/domains/beshique.com/public_html"
+PassengerBaseURI "/"
+PassengerPython "/home/beshique/virtualenv/domains/beshique.com/public_html/3.12/bin/python"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
+# Serve static files
+Alias /static/ /home/beshique/domains/beshique.com/public_html/staticfiles/
+<Directory "/home/beshique/domains/beshique.com/public_html/staticfiles/">
+    Require all granted
+</Directory>

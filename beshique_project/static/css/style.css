@@ -1,0 +1,125 @@
+@keyframes zzPulse {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-10%) scale(1.1);
+        opacity: 0.7;
+    }
+}
+
+.zz-animate {
+    animation: zzPulse 2.5s ease-in-out infinite;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.feature-card {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-color: #F3F4F6;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+nav {
+    min-height: 64px;
+    max-height: 64px;
+}
+
+nav img {
+    max-height: 40px; /* Limits logo to fit within navbar height */
+}
+
+nav a:last-child {
+    margin-left: auto; /* Pushes the button to the right */
+}
+
+@keyframes blink {
+    0%, 100% {
+      height: 64px;
+    }
+    48%, 52% {
+      height: 10px;
+    }
+  }
+  
+  .eye-animate {
+      animation: blink 6s ease-in-out infinite;
+      overflow: hidden;
+      transition: height 0.3s ease;
+  }
+  
+  .eye-animate .iris {
+      animation: irisPulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes irisPulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+  }
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 0 0px rgba(96, 165, 250, 0.4); /* blue-400 */
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 12px rgba(96, 165, 250, 0.7); /* blue-400 */
+        transform: scale(1.05);
+    }
+    }  
+
+    .power-button {
+        animation: glowPulse 2.8s ease-in-out infinite;
+        transition: all 0.3s ease;
+    }
+
+    .power-symbol {
+        animation: glowPulse 2.8s ease-in-out infinite;
+}
+   
+input::placeholder {
+    font-weight: 600;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+/* Optional: Add custom preloader image styles */
+#preloader img {
+    max-width: 200px; /* Adjust size as needed */
+    width: 100%;
+    height: auto;
+}

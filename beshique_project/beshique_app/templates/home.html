@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section id="home" class="py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold text-black mb-6 flex flex-col items-center">
+                <img src="{% static 'images/Logo_small.png' %}" alt="Beshique Logo" class="h-20 w-auto mb-2">
+                <span class="text-4xl text-gray-600 font-semibold mt-2">The smart baby cradle.</span>
+            </h1>            
+            <img src="{% static 'images/beshique design.jpg' %}" alt="Beshique Cradle" class="mx-auto mt-8 rounded-2xl shadow-md w-full max-w-3xl animate-fadeInUp">
+        </div>
+    </section>
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8"> {# Changed to md:grid-cols-2 #}
+            <div class="bg-gray-50 rounded-xl p-10 shadow-sm feature-card relative overflow-visible">
+                <div class="w-24 h-24 mb-6 flex items-center justify-center">
+                    <span class="zz-animate text-5xl font-semibold text-blue-400">💤</span>
+                </div>
+                <h3 class="text-3xl font-bold text-black mb-4">Sleeps When Baby Sleeps.</h3>
+                <p class="text-xl text-gray-600">
+                    Autonomous soothing that adapts to your baby’s sleep cycles.
+                    Rocking and white noise automatically adjust to your baby’s state — no buttons, no stress.
+                </p>
+            </div>            
+            <div class="bg-gray-50 rounded-xl p-10 shadow-sm feature-card relative overflow-visible">
+                <div class="w-24 h-24 mb-6 flex items-center justify-center">
+                    <div class="eye-animate relative w-16 h-16 rounded-full border-2 border-blue-400 flex items-center justify-center">
+                        <div class="iris w-4 h-4 bg-blue-400 rounded-full"></div>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-bold text-black mb-4">Always Watching, Never Intruding.</h3>
+                <p class="text-xl text-gray-600">
+                    Smart monitoring that understands your baby’s needs. Real-time eye, motion, and sound detection with intelligent insights — all without disturbing their rest.
+                </p>
+            </div>
+            {# The third card will automatically wrap to the next row due to md:grid-cols-2 #}
+            <div class="bg-gray-50 rounded-xl p-10 shadow-sm feature-card md:col-span-2 w-full max-w-4xl mx-auto">
+                <div class="w-24 h-24 mb-6 flex items-center justify-center">
+                    <div class="power-button w-16 h-16 rounded-full border-2 border-blue-400 flex items-center justify-center">
+                        <div class="power-symbol text-3xl text-blue-500 font-bold">⏻</div>
+                    </div>
+                </div>
+                <h3 class="text-3xl font-bold text-black mb-4">Plug In. Peace Out.</h3>
+                <p class="text-xl text-gray-600">
+                    Setup takes minutes. Sleep improves for years.
+                    A minimalist, quiet, plug-and-play design made for modern parents and cozy nurseries.
+                </p>
+            </div>            
+        </div>
+    </section>
+    <section id="how-it-works" class="py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-black mb-3">How It Works</h2>
+            <p class="text-2xl text-gray-400 font-semibold mb-10">A seamless experience for you and your baby.</p>
+            <div class="bg-gray-50 rounded-xl p-10 shadow-sm max-w-md mx-auto">
+                <ol class="text-lg text-gray-600 space-y-4 text-left">
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2 font-bold">1.</span> 
+                        <span>Quick Setup - Plug in and set up the cradle in minutes.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2 font-bold">2.</span> 
+                        <span>Smart Detection - The AI camera reads your baby’s facial expressions, fusses, and early awakening signs.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2 font-bold">3.</span> 
+                        <span>Gentle Soothing - It starts vertical or horizontal soothing, mimicking parental care.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2 font-bold">4.</span> 
+                        <span>Calming Noise - Plays white noise to enhance sleep.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2 font-bold">5.</span> 
+                        <span>Smooth Stop - Stops bouncing once your baby is asleep.</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-black mb-3">Pricing</h2>
+            <p class="text-2xl text-gray-400 font-semibold mb-10">One-time payment for a lifetime of peace.</p>
+            <div class="bg-gray-50 rounded-xl p-10 shadow-sm max-w-md mx-auto">
+                <h3 class="text-3xl font-bold text-black mb-4">$999</h3>
+                <ul class="text-lg text-gray-600 space-y-3 text-left">
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2">✔</span> Beshique Smart Baby Cradle backed by a lifetime warranty
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2">✔</span> Intelligent soothing featuring adaptive rocking and soothing white noise
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2">✔</span> Built-in nanny cam with advanced smart monitoring integrated with a user-friendly app
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2">✔</span> Complimentary setup assistance and lifelong software updates
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2">✔</span> Luxuriously soft, baby-safe mattress for ultimate comfort
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-2">✔</span> Three months of complimentary premium app access for enhanced insights
+                    </li>
+                </ul>
+                <a href="#wishlist" class="mt-6 inline-block bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 text-lg font-medium">
+                    Join Wishlist
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="wishlist" class="py-40 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-black mb-3">Get early access.</h2>
+            <p class="text-2xl text-gray-400 font-semibold mb-10">Wishlist now. Stay updated.</p>
+            <form method="post" class="max-w-md mx-auto w-full flex flex-col items-center gap-4">
+                {% csrf_token %}
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="name@framer.com"
+                    class="w-full px-6 py-4 text-lg bg-gray-100 border-none rounded-md font-medium text-black placeholder-gray-400 focus:outline-none"
+                    required
+                >
+                <button 
+                    type="submit"
+                    class="w-full px-6 py-4 bg-black text-white text-lg font-semibold rounded-md hover:bg-gray-900 transition">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </section>
+    <section id="contact" class="py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-black mb-3">Contact Us</h2>
+            <p class="text-2xl text-gray-400 font-semibold mb-10">We’re here to help.</p>
+            <div class="bg-gray-50 rounded-xl p-10 shadow-sm max-w-md mx-auto">
+                <ul class="text-lg text-gray-600 space-y-4 text-center">
+                    <li><span class="mr-2">✉️</span>
+                        <a href="mailto:beshiqueai@gmail.com" class="text-1xl text-gray-400 font-semibold">beshiqueai@gmail.com</a>
+                    </li>
+                    <li><span class="mr-2">📞</span>
+                        <a href="tel:+998772651115" class="text-1xl text-gray-400 font-semibold">+998 77 265 1115</a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/linkedin_logo.png' %}" alt="LinkedIn" class="inline-block h-5 w-5 mr-2 align-middle">
+                        <a href="https://www.linkedin.com/company/beshique" class="text-1xl text-gray-400 font-semibold" target="_blank">Beshique</a>
+                    </li>
+                    <li><span class="mr-2">𝕏</span>
+                        <a href="https://x.com/beshique" class="text-1xl text-gray-400 font-semibold" target="_blank">Beshique</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}
